@@ -1,16 +1,26 @@
 .navigation {
+    
     border: 1px solid lime;
     display: flex;
     width: 80%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    @media @mobile {
+        flex-direction: column;
+        background: lime;
+        width: 100%;
+    }
+
     
     .anchor {
         display: flex;
         width: 40%;
         justify-content: space-evenly;
         align-items: center;
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
 .container {

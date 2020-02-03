@@ -1,4 +1,39 @@
-
+body {
+  width: 60%;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .navigation {
   border: 1px solid lime;
   display: flex;
@@ -7,11 +42,23 @@
   align-items: center;
   margin: 0 auto;
 }
+@media ( max-width: 500px ) {
+  .navigation {
+    flex-direction: column;
+    background: lime;
+    width: 100%;
+  }
+}
 .navigation .anchor {
   display: flex;
   width: 40%;
   justify-content: space-evenly;
   align-items: center;
+}
+@media ( max-width: 500px ) {
+  .navigation .anchor {
+    width: 100%;
+  }
 }
 .container {
   width: 80%;
