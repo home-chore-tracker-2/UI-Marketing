@@ -1,0 +1,40 @@
+.navigation {
+    background: @bg-color;
+    border-radius: 10px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+    }
+    .check-mark {
+        font-size: 4rem;
+        color: green;
+        padding-right: 2%;
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        .headerStyling();
+    }
+    .anchor {
+        font-size: 1.2rem;
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 0.5%;
+        @media @mobile {
+            width: 100%;
+        }
+        a {
+          .anchorMixin();
+        }
+    }
+}
