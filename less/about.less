@@ -1,0 +1,37 @@
+
+//navigation styling
+//container styling
+.group {
+    border: 1px solid magenta;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media @mobile {
+        flex-direction: column;
+    }
+    .person {
+        border: 1px solid red;
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        @media @mobile {
+            width: 90%;
+            margin: 0 auto;
+        }
+     img {
+         
+         width: 50%;
+         height: 20vh;
+     }
+     p {
+         text-align: center;
+     }
+     button {
+         width: 50%;
+         border-radius: 5px;
+     }
+    }
+}
