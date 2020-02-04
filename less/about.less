@@ -1,8 +1,5 @@
 
-//navigation styling
-//container styling
 .group {
-    border: 1px solid magenta;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,28 +7,46 @@
         flex-direction: column;
     }
     .person {
-        border: 1px solid red;
         padding: 2% 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 30%;
+        &:hover {
+            border: 2px dotted black;
+        }
         @media @mobile {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
         }
+    .person-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
      img {
-         
          width: 50%;
-         height: 20vh;
+         height: 15vh;
+         @media @mobile {
+             width: 70%;
+             height: 30vh;
+         }
      }
      p {
          text-align: center;
      }
+     .bold {
+         font-weight: bold;
+     }
      button {
          width: 50%;
          border-radius: 5px;
+         @media @mobile {
+             width: 80%;
+         }
      }
     }
 }

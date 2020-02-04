@@ -1,15 +1,19 @@
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
-    background: lightgrey;
+    background: @bg-color;
     border-radius: 10px;
     width: 90%;
     @media @mobile {
         width: 100%;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
     }
     .nav-footer {
         display:flex;
@@ -20,6 +24,7 @@ footer {
         }
         a {
             text-decoration: none;
+            .anchorMixin();
         }
     }
 }

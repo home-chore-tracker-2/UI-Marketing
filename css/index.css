@@ -1,5 +1,39 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zhi Mang Xing';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
+}
 body {
-  border: 1px solid lime;
   width: 60%;
   margin: 0 auto;
 }
@@ -41,8 +75,7 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  border: 1px solid lime;
-  background: lightgrey;
+  background: #7F85A7;
   border-radius: 10px;
   display: flex;
   width: 90%;
@@ -53,12 +86,10 @@ p {
 @media ( max-width: 500px ) {
   .navigation {
     flex-direction: column;
-    background: lime;
     width: 100%;
   }
 }
 .navigation .check-mark {
-  border: 1px solid magenta;
   font-size: 4rem;
   color: green;
   padding-right: 2%;
@@ -70,6 +101,7 @@ p {
 }
 .navigation h1 {
   font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 .navigation .anchor {
   font-size: 1.2rem;
@@ -85,7 +117,10 @@ p {
   }
 }
 .navigation .anchor a {
+  font-size: 1.3rem;
   text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   width: 80%;
@@ -127,7 +162,7 @@ p {
 }
 @media ( max-width: 500px ) {
   .container .intro img {
-    height: 15vh;
+    height: 25vh;
   }
 }
 .container .images {
@@ -160,7 +195,7 @@ p {
   }
 }
 .container .clean {
-  border: 1px solid black;
+  border-top: 1px dotted black;
   display: flex;
   padding: 2% 0;
   justify-content: space-evenly;
@@ -176,7 +211,6 @@ p {
   font-size: 2rem;
 }
 .container .clean .jump-start {
-  border: 1px solid lime;
   text-align: center;
   width: 35%;
   height: auto;
@@ -190,6 +224,9 @@ p {
   font-size: 1.3rem;
 }
 .container .clean .btn {
+  background: darkgray;
+  color: white;
+  font-weight: bold;
   width: 80%;
   height: 4vh;
   border-radius: 10px;
@@ -197,7 +234,6 @@ p {
 .container .clean .bottom-image {
   height: 20vh;
   width: 30%;
-  border: 1px solid purple;
   border-radius: 10px;
 }
 @media ( max-width: 500px ) {
@@ -218,7 +254,6 @@ p {
   }
 }
 .group {
-  border: 1px solid magenta;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -229,39 +264,62 @@ p {
   }
 }
 .group .person {
-  border: 1px solid red;
   padding: 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 30%;
+}
+.group .person:hover {
+  border: 2px dotted black;
 }
 @media ( max-width: 500px ) {
   .group .person {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
+.group .person .person-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .group .person img {
   width: 50%;
-  height: 20vh;
+  height: 15vh;
+}
+@media ( max-width: 500px ) {
+  .group .person img {
+    width: 70%;
+    height: 30vh;
+  }
 }
 .group .person p {
   text-align: center;
+}
+.group .person .bold {
+  font-weight: bold;
 }
 .group .person button {
   width: 50%;
   border-radius: 5px;
 }
+@media ( max-width: 500px ) {
+  .group .person button {
+    width: 80%;
+  }
+}
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
-  background: lightgrey;
+  background: #7F85A7;
   border-radius: 10px;
   width: 90%;
 }
@@ -269,6 +327,10 @@ footer {
   footer {
     width: 100%;
   }
+}
+footer p {
+  text-align: center;
+  font-weight: bold;
 }
 footer .nav-footer {
   display: flex;
@@ -281,5 +343,8 @@ footer .nav-footer {
   }
 }
 footer .nav-footer a {
+  font-size: 1.3rem;
   text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
