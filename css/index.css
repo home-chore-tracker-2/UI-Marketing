@@ -34,6 +34,7 @@
   src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
 }
 body {
+  background: lightgrey;
   width: 60%;
   margin: 0 auto;
 }
@@ -257,6 +258,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-bottom: 1px dotted black;
 }
 @media ( max-width: 500px ) {
   .group {
