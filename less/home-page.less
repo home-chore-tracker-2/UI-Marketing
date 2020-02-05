@@ -10,9 +10,8 @@
     border-bottom: 1px dotted black;
     padding: 2% 0;
     margin: 1% auto;
-    h2 {
-        text-align: center;
-       .h2styling();
+    h2 { 
+        .h2styling();
         @media @mobile {
         text-align: center;
         }
@@ -40,10 +39,10 @@
     display:flex;
     justify-content: space-evenly;
     img {
-        padding-top: 1%;
+        padding: 1% 0;
         width: 30%;
         height: 26vh;
-        border-radius: 20px;
+        border-radius: 30px;
         @media @mobile {
             width: 45%;
             height: 15vh;
@@ -52,18 +51,25 @@
 }
 .easy-life {
     h3 {
-        text-align:center;
         font-size: 2rem;
         .paddingMixin();
         .h2styling();
     }
-    p {
+    ul {
         font-size: 1.6rem;
         text-align: center;
+        list-style: circle;
+        margin-left: 1%;
+        line-height: 2.5rem;
         .paddingMixin();
+        padding-bottom: 2%;
         @media @mobile {
             text-align: center;
         }
+        li {
+            padding: 1% 0;
+        }
+        
     }
 }
 .clean {
