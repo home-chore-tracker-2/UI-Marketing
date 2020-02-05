@@ -13,11 +13,11 @@
   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Zhi Mang Xing';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Sigmar One';
@@ -25,13 +25,6 @@
   font-weight: 400;
   font-display: swap;
   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Zhi Mang Xing';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
 }
 html,
 body,
@@ -263,7 +256,6 @@ p {
   margin: 1% auto;
 }
 .container .intro h2 {
-  text-align: center;
   font-family: 'Sigmar One', cursive;
   font-size: 2.3rem;
 }
@@ -299,10 +291,10 @@ p {
   justify-content: space-evenly;
 }
 .container .images img {
-  padding-top: 1%;
+  padding: 1% 0;
   width: 30%;
   height: 26vh;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 @media ( max-width: 500px ) {
   .container .images img {
@@ -311,21 +303,27 @@ p {
   }
 }
 .container .easy-life h3 {
-  text-align: center;
   font-size: 2rem;
   padding-top: 2%;
   font-family: 'Sigmar One', cursive;
   font-size: 2.3rem;
 }
-.container .easy-life p {
+.container .easy-life ul {
   font-size: 1.6rem;
   text-align: center;
+  list-style: circle;
+  margin-left: 1%;
+  line-height: 2.5rem;
   padding-top: 2%;
+  padding-bottom: 2%;
 }
 @media ( max-width: 500px ) {
-  .container .easy-life p {
+  .container .easy-life ul {
     text-align: center;
   }
+}
+.container .easy-life ul li {
+  padding: 1% 0;
 }
 .container .clean {
   border-top: 1px dotted black;
@@ -445,6 +443,8 @@ p {
 .group .person button {
   width: 50%;
   border-radius: 5px;
+  color: green;
+  background: seashell;
 }
 @media ( max-width: 500px ) {
   .group .person button {
