@@ -26,6 +26,14 @@
   font-display: swap;
   src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
 }
+@keyframes pulse {
+  from {
+    background: red;
+  }
+  to {
+    background: lime;
+  }
+}
 html,
 body,
 div,
@@ -504,6 +512,11 @@ p {
   border-radius: 10px;
   margin-top: 2%;
 }
+.container .clean .btn:hover {
+  animation: pulse 5s infinite;
+  background: red;
+  color: white;
+}
 @media ( max-width: 800px ) {
   .container .clean .btn {
     width: 60%;
@@ -599,6 +612,11 @@ p {
   border-radius: 5px;
   color: green;
   background: seashell;
+}
+.group .person button:hover {
+  animation: pulse 5s infinite;
+  background: red;
+  color: black;
 }
 @media ( max-width: 500px ) {
   .group .person button {
