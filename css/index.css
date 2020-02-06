@@ -385,6 +385,11 @@ p {
     height: 15vh;
   }
 }
+@media ( max-width: 800px ) {
+  .container .images img {
+    height: 20vh;
+  }
+}
 .container .easy-life h3 {
   font-size: 2rem;
   padding-top: 2%;
@@ -599,6 +604,11 @@ p {
   .group .person img {
     width: 70%;
     height: 20vh;
+  }
+}
+@media ( max-width: 800px ) {
+  .group .person img {
+    width: 70%;
   }
 }
 .group .person p {
