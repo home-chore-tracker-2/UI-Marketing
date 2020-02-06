@@ -160,6 +160,17 @@ body {
     margin: 0 auto;
   }
 }
+@media ( max-width: 800px ) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media ( max-width: 1000px ) {
+  body {
+    width: 90%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -192,11 +203,10 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  background: #7F85A7;
+  background: #03BD1F;
   border-radius: 10px;
   display: flex;
   width: 90%;
-  height: 8vh;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -205,6 +215,13 @@ p {
   .navigation {
     flex-direction: column;
     width: 100%;
+  }
+}
+@media ( max-width: 800px ) {
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
   }
 }
 .navigation .check-mark {
@@ -217,15 +234,25 @@ p {
     display: none;
   }
 }
+@media ( max-width: 800px ) {
+  .navigation .check-mark {
+    display: none;
+  }
+}
 .navigation h1 {
   font-size: 2.5rem;
   font-family: 'Sigmar One', cursive;
   font-size: 3rem;
 }
+@media ( max-width: 1000px ) {
+  .navigation h1 {
+    font-size: 2.5rem;
+  }
+}
 .navigation .anchor {
   font-size: 1.2rem;
   display: flex;
-  width: 40%;
+  width: 55%;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 0.5%;
@@ -233,6 +260,17 @@ p {
 @media ( max-width: 500px ) {
   .navigation .anchor {
     width: 100%;
+    margin-top: 2%;
+  }
+}
+@media ( max-width: 800px ) {
+  .navigation .anchor {
+    width: 100%;
+  }
+}
+@media ( max-width: 1000px ) {
+  .navigation .anchor {
+    width: 50%;
   }
 }
 .navigation .anchor a {
@@ -240,6 +278,11 @@ p {
   text-decoration: none;
   color: black;
   font-family: 'Roboto', sans-serif;
+}
+@media ( max-width: 1000px ) {
+  .navigation .anchor a {
+    font-size: 1rem;
+  }
 }
 .container {
   width: 80%;
@@ -264,6 +307,17 @@ p {
     text-align: center;
   }
 }
+@media ( max-width: 800px ) {
+  .container .intro h2 {
+    text-align: center;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .intro h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 .container .intro p {
   font-size: 1.6rem;
   text-align: center;
@@ -272,6 +326,17 @@ p {
 @media ( max-width: 500px ) {
   .container .intro p {
     text-align: center;
+    font-size: 1.3rem;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .intro p {
+    font-size: 1.4rem;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .intro p {
+    font-size: 1.4rem;
   }
 }
 .container .intro img {
@@ -286,6 +351,16 @@ p {
     height: 15vh;
   }
 }
+@media ( max-width: 800px ) {
+  .container .intro img {
+    width: 100%;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .intro img {
+    height: 25vh;
+  }
+}
 .container .images {
   display: flex;
   justify-content: space-evenly;
@@ -298,7 +373,7 @@ p {
 }
 @media ( max-width: 500px ) {
   .container .images img {
-    width: 45%;
+    width: 35%;
     height: 15vh;
   }
 }
@@ -307,6 +382,17 @@ p {
   padding-top: 2%;
   font-family: 'Sigmar One', cursive;
   font-size: 2.3rem;
+}
+@media ( max-width: 800px ) {
+  .container .easy-life h3 {
+    text-align: center;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .easy-life h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .container .easy-life ul {
   font-size: 1.6rem;
@@ -320,6 +406,17 @@ p {
 @media ( max-width: 500px ) {
   .container .easy-life ul {
     text-align: center;
+    font-size: 1.3rem;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .easy-life ul {
+    font-size: 1.4rem;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .easy-life ul {
+    font-size: 1.4rem;
   }
 }
 .container .easy-life ul li {
@@ -338,9 +435,20 @@ p {
     width: 100%;
   }
 }
+@media ( max-width: 800px ) {
+  .container .clean {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
 .container .clean h3 {
   font-family: 'Sigmar One', cursive;
   font-size: 2.3rem;
+}
+@media ( max-width: 800px ) {
+  .container .clean h3 {
+    width: 100%;
+  }
 }
 .container .clean .jump-start {
   text-align: center;
@@ -352,10 +460,40 @@ p {
     width: 100%;
   }
 }
+@media ( max-width: 800px ) {
+  .container .clean .jump-start {
+    width: 90%;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .clean .jump-start h3 {
+    width: 100%;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .clean .jump-start h3 {
+    font-size: 2rem;
+  }
+}
 .container .clean .jump-start p {
-  font-size: 1.3rem;
-  border: 1px solid lime;
+  font-size: 1.6rem;
   margin: 2% 0;
+}
+@media ( max-width: 500px ) {
+  .container .clean .jump-start p {
+    font-size: 1.3rem;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .clean .jump-start p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+@media ( max-width: 1000px ) {
+  .container .clean .jump-start p {
+    font-size: 1.4rem;
+  }
 }
 .container .clean .btn {
   background: darkgray;
@@ -366,6 +504,11 @@ p {
   border-radius: 10px;
   margin-top: 2%;
 }
+@media ( max-width: 800px ) {
+  .container .clean .btn {
+    width: 60%;
+  }
+}
 .container .clean .bottom-image {
   height: 20vh;
   width: 30%;
@@ -373,10 +516,15 @@ p {
 }
 @media ( max-width: 500px ) {
   .container .clean .bottom-image {
-    order: 0;
     width: 100%;
     height: 15vh;
     margin-bottom: 2%;
+  }
+}
+@media ( max-width: 800px ) {
+  .container .clean .bottom-image {
+    display: none;
+    width: 60%;
   }
 }
 .container .clean .sweep {
@@ -389,6 +537,12 @@ p {
     display: none;
   }
 }
+@media ( max-width: 800px ) {
+  .container .clean .sweep {
+    width: 60%;
+    margin-bottom: 2%;
+  }
+}
 .group {
   display: flex;
   flex-wrap: wrap;
@@ -397,7 +551,7 @@ p {
 }
 @media ( max-width: 500px ) {
   .group {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .group .person {
@@ -413,7 +567,7 @@ p {
 }
 @media ( max-width: 500px ) {
   .group .person {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
   }
 }
@@ -431,7 +585,7 @@ p {
 @media ( max-width: 500px ) {
   .group .person img {
     width: 70%;
-    height: 30vh;
+    height: 20vh;
   }
 }
 .group .person p {
@@ -451,6 +605,11 @@ p {
     width: 80%;
   }
 }
+@media ( max-width: 800px ) {
+  .group .person button {
+    width: 80%;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -458,7 +617,7 @@ footer {
   margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
-  background: #7F85A7;
+  background: #03BD1F;
   border-radius: 10px;
   width: 90%;
   height: 5vh;
