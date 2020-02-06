@@ -1,2 +1,6 @@
 # UI-Marketing
-Landing/Marketing Page
+Home Chore Tracker - Landing/Marketing Page
+
+Every parent knows the struggle of getting their kids to consistently and meaningfully contribute to the household chores. If you are tired of the exhorbitant allowance demands, half-done chores, and dubious claims that "I can't put that away because I don't know where it goes!" or "Johnny's parents are better than you because they don't make him do chores...", then ChoreChallenge is the tool you have been waiting for. With ChoreChallenge, it's easy to get your kids excited about chores with our "gamified" approach to household chore tracking and management. Easily create a list of chores (or use one of our templates) and then randomly assign them to your children. Foster healthy competition and habits with ChoreScore and CleanStreaks: our proprietary chore rating and tracking tools that have been (un)scientifically proven to be 100% more effecitve than side-eye and time-outs. Create accountability with  ChoreCheck - never again find that 6 month old lost banana rotting behind your precious little angel's nightstand. By requiring a photo of the completed chore to be uploaded, _you_ decide if that chore is actually completed or not. 
+
+**With ChoreTracker in their corner, parents can effortlessly turn household chores from "bore" into "score!"**
